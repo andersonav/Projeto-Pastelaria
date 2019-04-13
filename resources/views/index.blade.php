@@ -5,22 +5,22 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/fotosedev/icone.png" type="image/png">
+        <link rel="icon" href="{{asset('img/fotosedev/icone.png')}}" type="image/png">
         <title>Você Que Manda !</title>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{ asset('vendors/linericon/style.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{ asset('vendors/owl-carousel/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('vendors/lightbox/simpleLightbox.css')}}">
+        <link rel="stylesheet" href="{{ asset('vendors/nice-select/css/nice-select.css')}}">
+        <link rel="stylesheet" href="{{ asset('vendors/jquery-ui/jquery-ui.css')}}">
+        <link rel="stylesheet" href="{{ asset('vendors/animate-css/animate.css')}}">
         <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/util.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/util.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css')}}">
     </head>
 
     <body>
@@ -35,24 +35,24 @@
             <span class="menu-close"><i class="fa fa-times"></i></span>
             <div class="menu-header">
                 <div class="logo d-flex justify-content-center">
-                    <img src="img/fotosedev/logo.png" alt="">
+                    <img src="{{ asset('img/fotosedev/logo.png')}}" alt="">
                 </div>
             </div>
             <div class="nav-wraper">
                 <div class="navbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="#"><img src="img/header/nav-icon1.png" alt="">
+                        <li class="nav-item"><a class="nav-link active" href="#home"><img src="{{ asset('img/header/nav-icon1.png')}}" alt="">
                                 Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre"><img src="img/header/nav-icon2.png"
+                        <li class="nav-item"><a class="nav-link" href="#sobre"><img src="{{ asset('img/header/nav-icon2.png')}}"
                                                                                     alt="">Sobre nos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cadastro"><img src="img/header/nav-icon3.png"
+                        <li class="nav-item"><a class="nav-link" href="#cadastro"><img src="{{ asset('img/header/nav-icon3.png')}}"
                                                                                        alt="">Cadastro</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cardapio"><img src="img/header/nav-icon4.png"
+                        <li class="nav-item"><a class="nav-link" href="#cardapio"><img src="{{ asset('img/header/nav-icon4.png')}}"
                                                                                        alt="">Cardápio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato"><img src="img/header/nav-icon8.png"
+                        <li class="nav-item"><a class="nav-link" href="#contato"><img src="{{ asset('img/header/nav-icon8.png')}}"
                                                                                       alt="">Contato</a></li>
                         <li class="nav-item" data-toggle="modal" data-target="#exampleModal"><a class="nav-link"
-                                                                                                style="cursor: pointer;"><img src="img/header/nav-icon3.png" alt="">Login</a></li>
+                                                                                                style="cursor: pointer;"><img src="{{ asset('img/header/nav-icon3.png')}}" alt="">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +61,7 @@
 
         <div class="site-main">
             <!--================ Start Home Banner Area =================-->
-            <section class="home_banner_area">
+            <section class="home_banner_area" id="home">
                 <div class="banner_inner">
                     <div class="container-fluid no-padding">
                         <div class="row fullscreen">
@@ -120,8 +120,8 @@
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-6 ">
                                 <div class="right-img">
-                                    <img class="img1 img-fluid" src="img/fotosedev/img2.jpg" alt="">
-                                    <img class="img2 img-fluid" src="img/fotosedev/img4.jpg" alt="">
+                                    <img class="img1 img-fluid" src="{{ asset('img/fotosedev/img2.jpg')}}" alt="">
+                                    <img class="img2 img-fluid" src="{{ asset('img/fotosedev/img4.jpg')}}" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-5 offset-lg-1">
@@ -608,25 +608,26 @@
 
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="js/jquery-3.2.1.min.js"></script>
-            <script src="js/popper.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/stellar.js"></script>
-            <script src="js/cep.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/jquery.magnific-popup.min.js"></script>
-            <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-            <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-            <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-            <script src="vendors/jquery-ui/jquery-ui.js"></script>
-            <script src="js/jquery.ajaxchimp.min.js"></script>
-            <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-            <script src="vendors/counter-up/jquery.counterup.js"></script>
-            <script src="js/mail-script.js"></script>
+            <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+            <script src="{{asset('js/popper.js')}}"></script>
+            <script src="{{asset('js/bootstrap.min.js')}}"></script>
+            <script src="{{asset('js/stellar.js')}}"></script>
+            <script src="{{asset('js/cep.js')}}"></script>
+            <script src="{{asset('js/main.js')}}"></script>
+            <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
+            <script src="{{ asset('vendors/lightbox/simpleLightbox.min.js')}}"></script>
+            <script src="{{ asset('vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+            <script src="{{ asset('vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+            <script src="{{ asset('vendors/jquery-ui/jquery-ui.js')}}"></script>
+            <script src="{{asset('js/jquery.ajaxchimp.min.js')}}"></script>
+            <script src="{{ asset('vendors/counter-up/jquery.waypoints.min.js')}}"></script>
+            <script src="{{ asset('vendors/counter-up/jquery.counterup.js')}}"></script>
+            <script src="{{asset('js/mail-script.js')}}"></script>
             <!--gmaps Js-->
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-            <script src="js/gmaps.min.js"></script>
-            <script src="js/theme.js"></script>
+            <script src="{{asset('js/gmaps.min.js')}}"></script>
+            <script src="{{asset('js/theme.js')}}"></script>
+            <script src="{{asset('js/index.js')}}"></script>
     </body>
 
 </html>
