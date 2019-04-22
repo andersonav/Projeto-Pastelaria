@@ -5,6 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="icon" href="{{asset('img/fotosedev/icone.png')}}" type="image/png">
         <title>Você Que Manda !</title>
         <!-- Bootstrap CSS -->
@@ -568,8 +569,8 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
 
-                            <form class="contact-form-area contact-page-form contact-form text-right" id="myForm"
-                                  action="#" method="post">
+                            <form class="contact-form-area contact-page-form contact-form text-right" id="myFormLogin"
+                                  action="javascript:void(0)" method="post">
                                 <br>
                                 <center>
                                     <h1 class="modal-title" id="exampleModalLabel">Login</h1>
@@ -579,12 +580,12 @@
 
 
                                     <div class="form-group col-md-12">
-                                        <input type="email" class="form-control" id="name" name="name"
+                                        <input type="email" class="form-control" id="email" name="email"
                                                placeholder="Email" onfocus="this.placeholder = ''"
                                                onblur="this.placeholder = 'Email'">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="password" class="form-control" id="name" name="name"
+                                        <input type="password" class="form-control" id="password" name="password"
                                                placeholder="Senha" onfocus="this.placeholder = ''"
                                                onblur="this.placeholder = 'Senha'">
                                     </div>
@@ -593,7 +594,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <div class="col-lg-12 text-center">
-                                        <button class="primary-btn text-uppercase">Entrar</button>
+                                        <button class="primary-btn text-uppercase" type="submit" id="btnLogar">Entrar</button>
                                     </div>
                                 </div>
                             </form>
