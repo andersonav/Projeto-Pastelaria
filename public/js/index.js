@@ -40,12 +40,11 @@ $(document).ready(function () {
             }, error: function (errors, textStatus, errorThrown) {
 
                 $.each(errors.responseJSON, function (key, value) {
-                   
+
                 });
             },
             complete: function () {
             }
         });
-    }
-    );
+    });
 });
